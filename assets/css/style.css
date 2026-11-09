@@ -409,3 +409,44 @@ p{margin:0 0 1em}
 
 .hero__content,.page-hero__content{position:relative;z-index:1}
 @media (max-width:600px){.page-hero .corner--br{width:120px;height:120px}}
+
+/* ===== submenu ===== */
+.nav__group{position:relative;display:flex;align-items:center;gap:2px}
+.nav__toggle{background:none;border:0;width:22px;height:22px;cursor:pointer;color:#e7e7ea;position:relative;padding:0}
+.nav__toggle::before{content:"";position:absolute;left:50%;top:45%;width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translate(-50%,-50%) rotate(45deg);transition:transform .2s}
+.nav__sub{position:absolute;top:calc(100% + 14px);left:-18px;min-width:250px;background:#0d0d0f;border:1px solid var(--line);border-top:3px solid var(--red);border-radius:0 0 10px 10px;padding:10px 0;display:grid;opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .2s,transform .2s,visibility .2s;box-shadow:0 20px 40px -10px rgba(0,0,0,.8)}
+.nav__sub::before{content:"";position:absolute;left:0;right:0;top:-18px;height:18px}
+.nav__sub a{padding:10px 20px;font-size:.92rem;text-decoration:none;color:#ddd}
+.nav__sub a::after{display:none}
+.nav__sub a:hover{background:rgba(212,22,30,.12);color:#fff}
+@media (min-width:1151px){
+  .nav__group:hover .nav__sub,.nav__group:focus-within .nav__sub{opacity:1;visibility:visible;transform:none}
+  .nav__group:hover .nav__toggle::before{transform:translate(-50%,-30%) rotate(-135deg)}
+}
+@media (max-width:1150px){
+  .nav{overflow-y:auto;padding:90px 20px 40px;justify-content:flex-start}
+  .nav__group{flex-wrap:wrap;justify-content:center;gap:10px}
+  .nav__toggle{width:34px;height:34px;border:1px solid var(--line);border-radius:50%}
+  .nav__toggle[aria-expanded=true]::before{transform:translate(-50%,-30%) rotate(-135deg)}
+  .nav__sub{position:static;flex-basis:100%;opacity:1;visibility:visible;transform:none;display:none;background:none;border:0;box-shadow:none;text-align:center;padding:4px 0 0}
+  .nav__sub.is-open{display:grid}
+  .nav__sub a{font:500 1.05rem/1 var(--sans);color:var(--muted);padding:9px}
+}
+
+/* ===== 4 kaarten + specialismen ===== */
+.cards--4{grid-template-columns:repeat(4,1fr);gap:18px}
+.cards--4 .card{padding:28px 24px}
+.cards--4 .card h3{font-size:1.5rem}
+.specials{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;padding:18px 22px;border:1px solid var(--line);border-radius:10px;background:var(--ink)}
+.specials__title{margin:0 10px 0 0;font:700 1rem/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--red-hi)}
+.specials a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid #33333a;border-radius:999px;text-decoration:none;font-size:.92rem;font-weight:500;transition:border-color .2s,background .2s}
+.specials a:hover{border-color:var(--red);background:rgba(212,22,30,.12)}
+.specials svg{width:18px;height:18px;color:var(--red-hi)}
+.servicecards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0 10px}
+.servicecard{display:flex;flex-direction:column;gap:6px;padding:20px;border:1px solid var(--line);border-radius:10px;background:var(--panel);text-decoration:none;transition:border-color .2s,transform .2s}
+.servicecard:hover{border-color:var(--red);transform:translateY(-3px)}
+.servicecard strong{font:700 1.3rem/1.1 var(--head);letter-spacing:.02em}
+.servicecard p{margin:0;color:var(--muted);font-size:.93rem;flex:1}
+.servicecard span{display:inline-flex;align-items:center;gap:6px;color:var(--red-hi);font:700 .9rem/1 var(--head);letter-spacing:.1em;text-transform:uppercase;margin-top:6px}
+@media (max-width:1150px){.cards--4{grid-template-columns:1fr 1fr;max-width:none}}
+@media (max-width:600px){.cards--4,.servicecards{grid-template-columns:1fr}}

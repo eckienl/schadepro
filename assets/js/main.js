@@ -16,6 +16,12 @@
   };
   burger.addEventListener('click', () => setMenu(!nav.classList.contains('is-open')));
   nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+  nav.querySelectorAll('.nav__toggle').forEach((t) => t.addEventListener('click', () => {
+    const sub = t.nextElementSibling;
+    const open = !sub.classList.contains('is-open');
+    sub.classList.toggle('is-open', open);
+    t.setAttribute('aria-expanded', String(open));
+  }));
 
   // Reveal-animaties
   const els = document.querySelectorAll('.reveal');

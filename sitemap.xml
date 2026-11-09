@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://schadepro.nl/</loc><lastmod>2026-11-09</lastmod><priority>1.0</priority></url>
+  <url><loc>https://schadepro.nl/onderhoud</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://schadepro.nl/schadeherstel</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://schadepro.nl/brandschade-herstel</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://schadepro.nl/nicotine-behandeling</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://schadepro.nl/houtrot-herstel</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
   <url><loc>https://schadepro.nl/schilderwerk</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
   <url><loc>https://schadepro.nl/latexspuitwerk</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
-  <url><loc>https://schadepro.nl/onderhoud-schadeherstel</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
   <url><loc>https://schadepro.nl/werkgebied</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
   <url><loc>https://schadepro.nl/contact</loc><lastmod>2026-11-09</lastmod><priority>0.8</priority></url>
 </urlset>
