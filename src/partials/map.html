@@ -1,0 +1,40 @@
+<div class="map reveal" aria-label="Kaart van het werkgebied rond Utrecht">
+          <svg viewBox="0 0 600 500" role="img">
+            <title>Werkgebied SchadePro rond Utrecht</title>
+            <defs>
+              <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#d4161e" stop-opacity=".45"/>
+                <stop offset="1" stop-color="#d4161e" stop-opacity=".12"/>
+              </radialGradient>
+              <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" fill="none" stroke="#ffffff" stroke-opacity=".04"/></pattern>
+            </defs>
+            <rect width="600" height="500" fill="url(#grid)"/>
+            <g class="roads">
+              <path d="M180 0 C 220 80, 250 130, 290 190 S 300 330, 270 500"/>
+              <path d="M0 250 C 120 240, 220 245, 300 225 S 470 200, 600 205"/>
+              <path d="M300 225 C 360 160, 420 110, 470 60 L 520 0"/>
+              <path d="M310 230 C 380 250, 460 300, 600 330"/>
+              <path d="M300 225 C 330 300, 340 380, 360 500"/>
+            </g>
+            <circle cx="300" cy="235" r="215" fill="url(#glow)" stroke="#e01b22" stroke-width="2"/>
+            <g class="shield" transform="translate(196 52)"><rect x="-16" y="-11" width="32" height="20" rx="4"/><text y="4">A2</text></g>
+            <g class="shield" transform="translate(470 60)"><rect x="-19" y="-11" width="38" height="20" rx="4"/><text y="4">A28</text></g>
+            <g class="shield" transform="translate(560 320)"><rect x="-19" y="-11" width="38" height="20" rx="4"/><text y="4">A12</text></g>
+            <g class="shield" transform="translate(350 470)"><rect x="-19" y="-11" width="38" height="20" rx="4"/><text y="4">A27</text></g>
+            <g class="amsterdam" transform="translate(120 28)"><path d="M0 0 l-6 10 h12z"/><text x="12" y="9">Amsterdam</text></g>
+            <g class="pins">
+              <g class="pin pin--main" transform="translate(304 207)"><circle r="8"/><text x="0" y="-18" text-anchor="middle">Utrecht</text></g>
+              <g class="pin" transform="translate(240 146)"><circle r="5.5"/><text x="0" y="-13" text-anchor="middle">Maarssen</text></g>
+              <g class="pin" transform="translate(372 155)"><circle r="5.5"/><text x="-10" y="-8" text-anchor="end">Bilthoven</text></g>
+              <g class="pin" transform="translate(396 210)"><circle r="5.5"/><text x="12" y="5" text-anchor="start">Zeist</text></g>
+              <g class="pin" transform="translate(404 170)"><circle r="5.5"/><text x="12" y="-4" text-anchor="start">Bosch en Duin</text></g>
+              <g class="pin" transform="translate(344 286)"><circle r="5.5"/><text x="12" y="5" text-anchor="start">Houten</text></g>
+              <g class="pin" transform="translate(276 286)"><circle r="5.5"/><text x="0" y="-13" text-anchor="middle">Nieuwegein</text></g>
+              <g class="pin" transform="translate(236 302)"><circle r="5.5"/><text x="-10" y="18" text-anchor="end">IJsselstein</text></g>
+              <g class="pin" transform="translate(284 338)"><circle r="5.5"/><text x="0" y="22" text-anchor="middle">Vianen</text></g>
+              <g class="pin" transform="translate(396 257)"><circle r="5.5"/><text x="12" y="5" text-anchor="start">Odijk</text></g>
+              <g class="pin" transform="translate(470 282)"><circle r="5.5"/><text x="0" y="22" text-anchor="middle">Doorn</text></g>
+              <g class="pin" transform="translate(120 214)"><circle r="5.5"/><text x="0" y="22" text-anchor="middle">Woerden</text></g>
+            </g>
+          </svg>
+        </div>

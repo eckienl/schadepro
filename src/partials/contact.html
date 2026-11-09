@@ -1,0 +1,42 @@
+      <div class="container contact">
+        <div class="contact__card reveal">
+          <p class="eyebrow">Bel of mail ons!</p>
+          <h2>Contact</h2>
+          <p class="contact__name">P.G.A. van Eck</p>
+          <ul class="contact__list">
+            <li><span class="cico"><svg><use href="#i-pin"/></svg></span>Regio Utrecht</li>
+            <li><span class="cico"><svg><use href="#i-phone"/></svg></span><a href="tel:+31655367559">06 55 36 75 59</a></li>
+            <li><span class="cico"><svg><use href="#i-mail"/></svg></span><a href="mailto:schadepro@ziggo.nl">schadepro@ziggo.nl</a></li>
+            <li><span class="cico"><svg><use href="#i-globe"/></svg></span><a href="/">schadepro.nl</a></li>
+            <li><span class="cico"><svg><use href="#i-insta"/></svg></span><a href="https://www.instagram.com/schadepro/" target="_blank" rel="noopener">Schadepro</a></li>
+          </ul>
+          <a class="btn btn--ghost contact__wa" href="https://wa.me/31655367559" target="_blank" rel="noopener">Stuur een WhatsApp</a>
+        </div>
+        <form class="form reveal" id="form" novalidate>
+          <h3>Vrijblijvend advies aanvragen</h3>
+          <p class="form__hint">Vul het formulier in; uw e-mailprogramma opent met het bericht klaar om te versturen.</p>
+          <div class="form__row">
+            <label>Naam<input name="naam" required autocomplete="name"></label>
+            <label>Telefoon<input name="telefoon" type="tel" autocomplete="tel"></label>
+          </div>
+          <div class="form__row">
+            <label>Plaats<input name="plaats" autocomplete="address-level2"></label>
+            <label>Soort klus
+              <select name="dienst">
+                <option>Onderhoud / schadeherstel</option>
+                <option>Schilderwerk</option>
+                <option>Latexspuitwerk</option>
+                <option>Glasvlies / behangwerk</option>
+                <option>Anders</option>
+              </select>
+            </label>
+          </div>
+          <label>Uw vraag of omschrijving van de schade<textarea name="bericht" rows="5" required></textarea></label>
+          <div class="form__radios" role="radiogroup" aria-label="Type klant">
+            <label class="form__check"><input type="radio" name="type" value="Particulier" checked> Particulier</label>
+            <label class="form__check"><input type="radio" name="type" value="Zakelijk"> Zakelijk</label>
+          </div>
+          <button class="btn btn--red btn--lg" type="submit"><svg><use href="#i-mail"/></svg> Verstuur aanvraag</button>
+          <p class="form__error" id="formError" role="alert"></p>
+        </form>
+      </div>
