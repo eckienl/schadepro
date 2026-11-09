@@ -260,7 +260,7 @@ PAGES = {
         "service": ("Schimmel verwijderen", "Verwijderen van schimmel en sporen, reinigen en desinfecteren en schimmelwerend behandelen van plafonds en muren in badkamers, keukens en woonruimtes."),
         "hero": {"img": ("overloop-wanden-latex-afgewerkt", 472, 488),
                  "h1": 'Schimmel <span class="red">verwijderen</span>',
-                 "tagline": "Verwijderen, reinigen en behandelen. Zo blijft schimmel weg en wordt uw ruimte weer gezond.",
+                 "tagline": "Effectieve verwijdering met een duurzame, preventieve aanpak. Inclusief sausen van plafonds en wanden.",
                  "cta": "Schimmel laten bekijken"},
         "faq": [
             ("Is overschilderen genoeg om schimmel weg te krijgen?",
