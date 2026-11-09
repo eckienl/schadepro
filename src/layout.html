@@ -25,7 +25,7 @@
   <meta name="geo.placename" content="Utrecht">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,800&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   {{preload}}
   <link rel="stylesheet" href="/assets/css/style.css?v={{version}}">
   <script type="application/ld+json">{{schema}}</script>
@@ -35,7 +35,7 @@
 
   <header class="header" id="top">
     <div class="container header__inner">
-      <a href="/" class="logo" aria-label="SchadePro.nl – home">SCHADEPRO<span>.nl</span></a>
+      <a href="/" class="logo" aria-label="SchadePro.nl – home"><svg class="logo__swoosh" viewBox="0 0 240 40" aria-hidden="true"><path d="M8 36 C 40 14, 92 4, 150 6 C 185 7, 212 16, 232 30 C 205 20, 180 15, 150 15 C 100 15, 55 24, 8 36z" fill="#e01b22"/><path d="M60 22 C 100 10, 150 8, 196 18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg><span class="logo__txt">SCHADE<b>PRO</b><i>.nl</i></span></a>
       <nav class="nav" id="nav" aria-label="Hoofdmenu">
         {{nav}}
         <a class="btn btn--red nav__cta" href="tel:+31655367559"><svg><use href="#i-phone"/></svg> Bel direct</a>
@@ -51,9 +51,9 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div>
-        <a href="/" class="logo">SCHADEPRO<span>.nl</span></a>
+        <a href="/" class="logo"><svg class="logo__swoosh" viewBox="0 0 240 40" aria-hidden="true"><path d="M8 36 C 40 14, 92 4, 150 6 C 185 7, 212 16, 232 30 C 205 20, 180 15, 150 15 C 100 15, 55 24, 8 36z" fill="#e01b22"/><path d="M60 22 C 100 10, 150 8, 196 18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg><span class="logo__txt">SCHADE<b>PRO</b><i>.nl</i></span></a>
         <p class="tagline">Uw herstelpartner van alle schades voor particulieren en bedrijven</p>
-        <p class="footer__nap">SchadePro &middot; P.G.A. van Eck<br>Regio Utrecht &middot; <a href="tel:+31655367559">06 55 36 75 59</a><br><a href="mailto:schadepro@ziggo.nl">schadepro@ziggo.nl</a></p>
+        <p class="footer__nap"><span class="footer__vca">VCA&#10003; gecertificeerd</span><br>SchadePro &middot; P.G.A. van Eck<br>Regio Utrecht &amp; Noord-Holland &middot; <a href="tel:+31655367559">06 55 36 75 59</a><br><a href="mailto:schadepro@ziggo.nl">schadepro@ziggo.nl</a></p>
       </div>
       <div>
         <p class="footer__title">Diensten</p>
@@ -62,22 +62,27 @@
           <li><a href="/schadeherstel">Schadeherstel</a></li>
           <li><a href="/brandschade-herstel">Brandschade herstel</a></li>
           <li><a href="/nicotine-behandeling">Nicotinebehandeling</a></li>
+          <li><a href="/schimmel-verwijderen">Schimmel verwijderen</a></li>
           <li><a href="/houtrot-herstel">Houtrot herstel</a></li>
           <li><a href="/schilderwerk">Schilderwerk</a></li>
           <li><a href="/latexspuitwerk">Latexspuitwerk</a></li>
+          <li><a href="/kitwerk">Kitwerk</a></li>
+          <li><a href="/kinderdagverblijven">Kinderdagverblijven</a></li>
         </ul>
       </div>
       <div>
         <p class="footer__title">Werkgebied</p>
         <ul class="footer__links footer__links--cols">
           <li><a href="/werkgebied#utrecht">Utrecht</a></li>
+          <li><a href="/werkgebied#amsterdam">Amsterdam</a></li>
           <li><a href="/werkgebied#houten">Houten</a></li>
+          <li><a href="/werkgebied#amstelveen">Amstelveen</a></li>
           <li><a href="/werkgebied#nieuwegein">Nieuwegein</a></li>
+          <li><a href="/werkgebied#haarlem">Haarlem</a></li>
           <li><a href="/werkgebied#zeist">Zeist</a></li>
-          <li><a href="/werkgebied#bilthoven">Bilthoven</a></li>
+          <li><a href="/werkgebied#zaanstad">Zaandam</a></li>
           <li><a href="/werkgebied#woerden">Woerden</a></li>
-          <li><a href="/werkgebied#ijsselstein">IJsselstein</a></li>
-          <li><a href="/werkgebied#vianen">Vianen</a></li>
+          <li><a href="/werkgebied#het-gooi">Hilversum</a></li>
         </ul>
       </div>
       <div>
@@ -89,7 +94,7 @@
         </ul>
       </div>
     </div>
-    <div class="container footer__bottom">&copy; <span id="year">2026</span> SchadePro.nl &middot; Schilder, latexspuiter en schadeherstel in regio Utrecht</div>
+    <div class="container footer__bottom">&copy; <span id="year">2026</span> SchadePro.nl &middot; Vakwerk. Snel. Netjes. &middot; Onderhoud, schadeherstel en schilderwerk in regio Utrecht en Noord-Holland</div>
   </footer>
 
   <a href="tel:+31655367559" class="fab" aria-label="Bel SchadePro"><svg><use href="#i-phone"/></svg></a>
@@ -114,6 +119,7 @@
     <symbol id="i-fire" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c1 3.5-1.5 5.2-2.6 7.3C8.2 11.5 8 13 8.6 14.6 7 14 6.2 12.6 6.3 11 4.8 12.6 4 14.5 4 16.4 4 20 7.6 22 12 22s8-2.2 8-6.3c0-3.3-2-5.5-3.6-7.4-.4 1.4-1.2 2.4-2.4 2.9C14.6 7.6 14 4.5 12 2z"/></symbol>
     <symbol id="i-drop" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5S5 10 5 14.5a7 7 0 0 0 14 0C19 10 12 2.5 12 2.5zm-2.6 12.2a2.6 2.6 0 0 0 2.6 2.6v1.6a4.2 4.2 0 0 1-4.2-4.2z"/></symbol>
     <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 2.5 4 5.5v6c0 5 3.4 8.8 8 10 4.6-1.2 8-5 8-10v-6z"/><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
   </svg>
 
