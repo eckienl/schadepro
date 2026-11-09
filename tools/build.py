@@ -178,7 +178,7 @@ PAGES = {
         "description": "Nicotineaanslag en rooklucht in woning of huurwoning? SchadePro behandelt en isoleert de ondergrond met speciale producten, zodat vlekken en geur niet terugkomen. Daarna strak geschilderd of gespoten.",
         "crumb": "Nicotinebehandeling", "parent": ("/schadeherstel", "Schadeherstel"),
         "service": ("Nicotinebehandeling", "Reinigen en isoleren van nicotineaanslag en rookgeur op muren, plafonds en houtwerk, met afwerking in verf of latexspuitwerk."),
-        "hero": {"img": ("overloop-wanden-latex-afgewerkt", 472, 488),
+        "hero": {"img": ("nicotine-na-achterkamer", 1000, 1333),
                  "h1": 'Nicotine<wbr>behandeling <span class="red">muren &amp; plafonds</span>',
                  "tagline": "Reinigen, sausen en spuiten: gele aanslag en rooklucht blijvend weg. Wij spuiten het weer als nieuw.",
                  "cta": "Nicotinebehandeling aanvragen"},

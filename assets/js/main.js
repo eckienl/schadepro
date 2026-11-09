@@ -83,5 +83,13 @@
     window.location.href = `mailto:schadepro@ziggo.nl?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 
+  // Voor/na vergelijker
+  document.querySelectorAll('.compare').forEach((c) => {
+    const r = c.querySelector('.compare__range');
+    const set = () => c.style.setProperty('--pos', r.value + '%');
+    r.addEventListener('input', set);
+    set();
+  });
+
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
