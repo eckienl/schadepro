@@ -16,7 +16,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "src"
 SITE = "https://schadepro.nl"
-VERSION = date.today().strftime("%Y%m%d")
+import hashlib
+VERSION = hashlib.sha1(b"".join((ROOT / f).read_bytes() for f in ("assets/css/style.css", "assets/js/main.js"))).hexdigest()[:10]
 PHONE = "+31655367559"
 MAILTO = "mailto:schadepro@ziggo.nl?subject=Aanvraag%20via%20schadepro.nl"
 
